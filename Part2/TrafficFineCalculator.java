@@ -36,32 +36,48 @@ public class TrafficFineCalculator {
 	    }
 
 	private static int calculateTotalFine(int[] a, int n, int d, int x) {
+		// 1st Way
+//		if(d%2 == 0) {
+//			// even function
+//			int count = 0;
+//			for(int i=0; i<n; i++) {
+//				if(a[i]%2 != 0) {
+//					count++;
+//				}
+//			}
+//			int fine = count * x;
+////			System.out.println(fine);
+//			return fine;
+//		}else {
+//			// odd function
+//			int count = 0;
+//			for(int i=0; i<n; i++) {
+//				if(a[i]%2 == 0) {
+//					count++;
+//				}
+//			}
+//			int fine = count * x;
+////			System.out.println(fine);
+//			return fine;
+//		}
 		
-		if(d%2 == 0) {
-			// even function
-			int count = 0;
-			for(int i=0; i<n; i++) {
-				if(a[i]%2 != 0) {
-					count++;
-				}
-			}
-			int fine = count * x;
-//			System.out.println(fine);
-			return fine;
-		}else {
-			// odd function
-			int count = 0;
-			for(int i=0; i<n; i++) {
-				if(a[i]%2 == 0) {
-					count++;
-				}
-			}
-			int fine = count * x;
-//			System.out.println(fine);
-			return fine;
-		}
+		// 2nd Way
+		int totalFine = 0;
+        boolean isEvenDate = (d % 2 == 0);
+
+        for (int i = 0; i < n; i++) {
+            boolean isEvenNumber = (a[i] % 2 == 0);
+
+            // Check if the vehicle violates the rule
+            if ((isEvenDate && !isEvenNumber) || (!isEvenDate && isEvenNumber)) {
+                totalFine += x;
+            }
+        }
+
+        return totalFine;
+    
 	
-	}
+}
 	 
 	 
 
