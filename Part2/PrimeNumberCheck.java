@@ -28,6 +28,7 @@ public class PrimeNumberCheck {
         }
     }
 
+    
     // Function to check if the number is prime
     public static boolean prime(int number) {
         if (number <= 1) {
