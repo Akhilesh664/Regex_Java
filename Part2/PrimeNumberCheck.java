@@ -11,7 +11,6 @@ public class PrimeNumberCheck {
         int number = scanner.nextInt();
 
         check(number);
-
         scanner.close();
     }
 
