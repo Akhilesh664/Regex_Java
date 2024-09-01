@@ -1,7 +1,6 @@
 package Part3;
 
 public class Author {
-
 	 String name;
 	 String email;
 
