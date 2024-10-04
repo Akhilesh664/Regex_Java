@@ -1,9 +1,11 @@
+// O(max(n,m)) : [Time complexity iterate in both arrays out of which ever array will be the biggest it will iterate worst max of(n, m) ]  
+// O(max(n,m)) : [Space complexity to store max(m,n) elements in array]
+
 package Arrays;
 
 public class AddTwoArrays {
 
 	public static void main(String[] args) {
-		
 		
 		int[] arr = {4, 5, 2, 0};
 		int n = arr.length;

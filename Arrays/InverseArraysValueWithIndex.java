@@ -1,3 +1,6 @@
+// O(n) : [Time complexity iterate in arrays to find index and put it in brr]  
+// O(n) : [Space complexity to store array in brr]
+
 package Arrays;
 
 public class InverseArraysValueWithIndex {

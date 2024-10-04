@@ -1,3 +1,6 @@
+// O(n) : [Time complexity iterate arrays and performe some code]  
+// O(1) : [Space complexity]
+
 package Arrays;
 
 public class AddIntegerIntoArray {
