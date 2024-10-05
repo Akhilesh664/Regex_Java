@@ -7,7 +7,7 @@ public class RotateArray {
 		int[] arr = {3,4,5,2,4,6};
 		int n = arr.length;
 		
-		// logic 
+		// logic : shifting elements towards right
 		int temp = arr[n-1];
 		for(int i = n-1; i>=1; i--) {
 			arr[i] = arr[i-1];
